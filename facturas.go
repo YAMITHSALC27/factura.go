@@ -124,7 +124,7 @@ func main() {
 		//agregar total general
 		pdf.Ln(10)
 		pdf.SetFont("Arial", "B", 12)
-		pdf.Cell(190, 10, "")
+		pdf.Cell(90, 9, "")
 		pdf.CellFormat(40, 10, "TOTAL GENERAL", "1", 0, "R", false, 0, "")
 		pdf.CellFormat(40, 10, fmt.Sprintf("%.2f", totalCliente), "1", 1, "R", false, 0, "")
 
