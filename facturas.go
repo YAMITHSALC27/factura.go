@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strconv"
 	"time"
-
 	"github.com/jung-kurt/gofpdf"
 )
 
@@ -100,9 +99,9 @@ func main() {
 
 		//agregar nombre cliente y fecha
 		pdf.SetFont("Arial", "", 12)
-		pdf.Cell(40, 10, fmt.Sprintf("Cliente: %s", nombreCliente))
+		pdf.Cell(40, 10, fmt.Sprintf("CLIENTE: %s", nombreCliente))
 		pdf.Ln(10)
-		pdf.Cell(40, 10, fmt.Sprintf("Fecha: %s", fechaFactura))
+		pdf.Cell(40, 10, fmt.Sprintf("FECHA: %s", fechaFactura))
 		pdf.Ln(10)
 
 		pdf.SetFillColor(200, 200, 200)
